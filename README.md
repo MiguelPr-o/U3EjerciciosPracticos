@@ -1,4 +1,4 @@
-# 🧩 Ejercicios Guiados 3
+# 🧩 Ejercicios Practicos 3
 
 Este repositorios recopila las actividades prácticas desarrolladas durante la **Unidad 3**
 
