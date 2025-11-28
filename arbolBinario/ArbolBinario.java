@@ -6,7 +6,7 @@ package arbolBinario;
 
 /**
  *
- * @author Miguel
+ * @author Miguel Angel Hernandez Godinez
  */
 public class ArbolBinario {
     private NodoArbol raiz;
@@ -67,3 +67,4 @@ public class ArbolBinario {
         }
     }
 }
+
