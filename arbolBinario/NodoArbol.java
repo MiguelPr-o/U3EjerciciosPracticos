@@ -6,7 +6,7 @@ package arbolBinario;
 
 /**
  *
- * @author Miguel
+ * @author Miguel Angel Hernandez Godinez
  */
 public class NodoArbol {
     private int dato;
@@ -32,3 +32,4 @@ public class NodoArbol {
     
     
 }
+
