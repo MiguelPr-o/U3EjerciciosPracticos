@@ -6,7 +6,7 @@ package arbolBinario;
 
 /**
  *
- * @author Miguel
+ * @author Miguel Angel Hernandez Godinez
  */
 public class PruebaArbol {
     public static void main(String[] args) {
@@ -27,3 +27,4 @@ public class PruebaArbol {
      }
 
 }
+
