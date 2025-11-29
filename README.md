@@ -16,10 +16,12 @@ Esta actividad fue realizada en clase el 27/11/2025
 
 | Archivo        | Enlace                                                                                                            |
 | ------------ | ----------------------------------------------------------------------------------------------------------------- |
-| 📄 Nodo Arbol | [Ver archivo](https://github.com/MiguelPr-o/U3EjerciciosPracticos/blob/main/arbolBinario/NodoArbol.java) |
-| 📄 Arbol Binario | [Ver archivo](https://github.com/MiguelPr-o/U3EjerciciosPracticos/blob/main/arbolBinario/ArbolBinario.java) |
-| 📄 Prueba Arbol | [Ver archivo](https://github.com/MiguelPr-o/U3EjerciciosPracticos/blob/main/arbolBinario/PruebaArbol.java) |
+| 📄 Nodo Arbol | [Ver código](https://github.com/MiguelPr-o/U3EjerciciosPracticos/blob/main/arbolBinario/NodoArbol.java) |
+| 📄 Arbol Binario | [Ver código](https://github.com/MiguelPr-o/U3EjerciciosPracticos/blob/main/arbolBinario/ArbolBinario.java) |
+| 📄 Prueba Arbol | [Ver código](https://github.com/MiguelPr-o/U3EjerciciosPracticos/blob/main/arbolBinario/PruebaArbol.java) |
 | 📄 Ejemplos de prueba | [Ver pdf](https://github.com/MiguelPr-o/U3EjerciciosPracticos/blob/main/Arbol%20Binario%20(practica).pdf) |
+### Salida del ejercicio
+<img width="832" height="249" alt="Captura de pantalla 2025-11-28 210344" src="https://github.com/user-attachments/assets/a292fb79-c7fd-407c-9dca-4ccf714a0303" />
 
 ---
 
