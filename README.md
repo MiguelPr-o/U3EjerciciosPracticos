@@ -19,9 +19,9 @@ Esta actividad fue realizada en clase el 27/11/2025
 | 📄 Nodo Arbol | [Ver archivo](https://github.com/MiguelPr-o/U3EjerciciosPracticos/blob/main/arbolBinario/NodoArbol.java) |
 | 📄 Arbol Binario | [Ver archivo](https://github.com/MiguelPr-o/U3EjerciciosPracticos/blob/main/arbolBinario/ArbolBinario.java) |
 | 📄 Prueba Arbol | [Ver archivo](https://github.com/MiguelPr-o/U3EjerciciosPracticos/blob/main/arbolBinario/PruebaArbol.java) |
+| 📄 Ejemplos de prueba | [Ver pdf](https://github.com/MiguelPr-o/U3EjerciciosPracticos/blob/main/Arbol%20Binario%20(practica).pdf) |
 
 ---
-
 
 👨‍💻 **Autor:** Miguel Angel Hernández Godínez
 🎓 **Materia:** Estructuras de Datos
