@@ -29,9 +29,9 @@ Esta actividad fue realizada en clase el 27/11/2025
 
 | Archivo        | Enlace                                                                                                            |
 | ------------ | ----------------------------------------------------------------------------------------------------------------- |
-| 📄 Ejercicio l | [Ver código](https://github.com/MiguelPr-o/U3EjerciciosPracticos/blob/main/EjerciciosPracticosSwing/Ejercicio1/SimuladorDOM_Swing.java) |
-| 📄 Ejercicio 2 | [Ver código](https://github.com/MiguelPr-o/U3EjerciciosPracticos/blob/main/EjerciciosPracticosSwing/Ejercicio2/VisualizadorABB.java) |
-| 📄 Ejercicio 3 | [Ver código](https://github.com/MiguelPr-o/U3EjerciciosPracticos/blob/main/EjerciciosPracticosSwing/Ejercicio3/ConjuntosSwing.java) |
+| 📄 Ejercicio l -  Simulador DOM con Árbol en Java Swing  | [Ver código](https://github.com/MiguelPr-o/U3EjerciciosPracticos/blob/main/EjerciciosPracticosSwing/Ejercicio1/SimuladorDOM_Swing.java) |
+| 📄 Ejercicio 2 - Aplicación para concepto de árboles | [Ver código](https://github.com/MiguelPr-o/U3EjerciciosPracticos/blob/main/EjerciciosPracticosSwing/Ejercicio2/VisualizadorABB.java) |
+| 📄 Ejercicio 3 - Aplicación de operaciones con conjuntos | [Ver código](https://github.com/MiguelPr-o/U3EjerciciosPracticos/blob/main/EjerciciosPracticosSwing/Ejercicio3/ConjuntosSwing.java) |
 
 
 👨‍💻 **Autor:** Miguel Angel Hernández Godínez
