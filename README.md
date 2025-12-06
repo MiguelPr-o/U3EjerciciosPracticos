@@ -25,5 +25,14 @@ Esta actividad fue realizada en clase el 27/11/2025
 
 ---
 
+## 🧮 Ejercicios Prácticos con Swing
+
+| Archivo        | Enlace                                                                                                            |
+| ------------ | ----------------------------------------------------------------------------------------------------------------- |
+| 📄 Ejercicio l | [Ver código](https://github.com/MiguelPr-o/U3EjerciciosPracticos/blob/main/EjerciciosPracticosSwing/Ejercicio1/SimuladorDOM_Swing.java) |
+| 📄 Ejercicio 2 | [Ver código](https://github.com/MiguelPr-o/U3EjerciciosPracticos/blob/main/EjerciciosPracticosSwing/Ejercicio2/VisualizadorABB.java) |
+| 📄 Ejercicio 3 | [Ver código](https://github.com/MiguelPr-o/U3EjerciciosPracticos/blob/main/EjerciciosPracticosSwing/Ejercicio3/ConjuntosSwing.java) |
+
+
 👨‍💻 **Autor:** Miguel Angel Hernández Godínez
 🎓 **Materia:** Estructuras de Datos
