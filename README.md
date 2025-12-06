@@ -27,11 +27,12 @@ Esta actividad fue realizada en clase el 27/11/2025
 
 ## 🧮 Ejercicios Prácticos con Swing
 
-| Archivo        | Enlace                                                                                                            |
-| ------------ | ----------------------------------------------------------------------------------------------------------------- |
-| 📄 Ejercicio l -  Simulador DOM con Árbol en Java Swing  | [Ver código](https://github.com/MiguelPr-o/U3EjerciciosPracticos/blob/main/EjerciciosPracticosSwing/Ejercicio1/SimuladorDOM_Swing.java) |
-| 📄 Ejercicio 2 - Aplicación para concepto de árboles | [Ver código](https://github.com/MiguelPr-o/U3EjerciciosPracticos/blob/main/EjerciciosPracticosSwing/Ejercicio2/VisualizadorABB.java) |
-| 📄 Ejercicio 3 - Aplicación de operaciones con conjuntos | [Ver código](https://github.com/MiguelPr-o/U3EjerciciosPracticos/blob/main/EjerciciosPracticosSwing/Ejercicio3/ConjuntosSwing.java) |
+| Archivo | Enlace | Pruebas (video) |
+|--------|--------|------------------|
+| 📄 Ejercicio 1 - Simulador DOM con Árbol en Java Swing | [Ver código](https://github.com/MiguelPr-o/U3EjerciciosPracticos/blob/main/EjerciciosPracticosSwing/Ejercicio1/SimuladorDOM_Swing.java) | 🔗 Pendiente |
+| 📄 Ejercicio 2 - Aplicación para concepto de árboles | [Ver código](https://github.com/MiguelPr-o/U3EjerciciosPracticos/blob/main/EjerciciosPracticosSwing/Ejercicio2/VisualizadorABB.java) | 🔗 Pendiente |
+| 📄 Ejercicio 3 - Aplicación de operaciones con conjuntos | [Ver código](https://github.com/MiguelPr-o/U3EjerciciosPracticos/blob/main/EjerciciosPracticosSwing/Ejercicio3/ConjuntosSwing.java) | 🔗 Pendiente |
+
 
 
 👨‍💻 **Autor:** Miguel Angel Hernández Godínez
