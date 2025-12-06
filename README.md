@@ -29,9 +29,9 @@ Esta actividad fue realizada en clase el 27/11/2025
 
 | Archivo | Enlace | Pruebas (video) |
 |--------|--------|------------------|
-| 📄 Ejercicio 1 - Simulador DOM con Árbol en Java Swing | 💻 [Ver código](https://github.com/MiguelPr-o/U3EjerciciosPracticos/blob/main/EjerciciosPracticosSwing/Ejercicio1/SimuladorDOM_Swing.java) | 🔗 [Ver video](https://github.com/MiguelPr-o/U3EjerciciosPracticos/blob/main/Simulador_DOM%20(pruebas%20-%20video).mp4) |
-| 📄 Ejercicio 2 - Aplicación para concepto de árboles | 💻 [Ver código](https://github.com/MiguelPr-o/U3EjerciciosPracticos/blob/main/EjerciciosPracticosSwing/Ejercicio2/VisualizadorABB.java) | 🔗 [Ver video](https://github.com/MiguelPr-o/U3EjerciciosPracticos/blob/main/Aplicacion_arboles%20(pruebas%20-%20video).mp4) |
-| 📄 Ejercicio 3 - Aplicación de operaciones con conjuntos | 💻 [Ver código](https://github.com/MiguelPr-o/U3EjerciciosPracticos/blob/main/EjerciciosPracticosSwing/Ejercicio3/ConjuntosSwing.java) | 🔗 [Ver video](https://github.com/MiguelPr-o/U3EjerciciosPracticos/blob/main/Conjuntos_Swing%20(pruebas%20-%20video).mp4) |
+| 📄 Ejercicio 1 - Simulador DOM con Árbol en Java Swing | 💻 [Ver código](https://github.com/MiguelPr-o/U3EjerciciosPracticos/blob/main/EjerciciosPracticosSwing/Ejercicio1/SimuladorDOM_Swing.java) | 🎥 [Ver video](https://github.com/MiguelPr-o/U3EjerciciosPracticos/blob/main/Simulador_DOM%20(pruebas%20-%20video).mp4) |
+| 📄 Ejercicio 2 - Aplicación para concepto de árboles | 💻 [Ver código](https://github.com/MiguelPr-o/U3EjerciciosPracticos/blob/main/EjerciciosPracticosSwing/Ejercicio2/VisualizadorABB.java) | 🎥 [Ver video](https://github.com/MiguelPr-o/U3EjerciciosPracticos/blob/main/Aplicacion_arboles%20(pruebas%20-%20video).mp4) |
+| 📄 Ejercicio 3 - Aplicación de operaciones con conjuntos | 💻 [Ver código](https://github.com/MiguelPr-o/U3EjerciciosPracticos/blob/main/EjerciciosPracticosSwing/Ejercicio3/ConjuntosSwing.java) | 🎥 [Ver video](https://github.com/MiguelPr-o/U3EjerciciosPracticos/blob/main/Conjuntos_Swing%20(pruebas%20-%20video).mp4) |
 
 
 
