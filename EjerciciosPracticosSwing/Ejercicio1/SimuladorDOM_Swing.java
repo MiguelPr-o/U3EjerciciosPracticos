@@ -7,7 +7,6 @@ package EjerciciosPracticosSwing.Ejercicio1;
 /**
  * @author Miguel
  * Simulación de DOM – Creación de Página Web
- * Versión adaptada exactamente al ejemplo proporcionado por el usuario.
  * Muestra:
  *  - Árbol DOM a la izquierda
  *  - Código HTML en vivo a la derecha (en texto plano)
@@ -30,7 +29,7 @@ public class SimuladorDOM_Swing extends JFrame {
     private JTextField campoTexto;
 
     public SimuladorDOM_Swing() {
-        setTitle("Simulación de DOM – Creación de Página Web");
+        setTitle("Simulación de DOM – Creación de Página Web - Miguel Angel Hernandez Godinez");
         setSize(900, 500);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLocationRelativeTo(null);

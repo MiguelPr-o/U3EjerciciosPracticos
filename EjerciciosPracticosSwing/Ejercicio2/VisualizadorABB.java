@@ -43,7 +43,7 @@ public class VisualizadorABB extends JFrame {
     private PanelDibujo panelDibujo;
 
     public VisualizadorABB() {
-        setTitle("Visualizador de Árbol Binario de Búsqueda (ABB)");
+        setTitle("Visualizador de Árbol Binario de Búsqueda (ABB) - Miguel Angel Hernandez Godinez");
         setSize(1000, 650);
         setLocationRelativeTo(null);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
