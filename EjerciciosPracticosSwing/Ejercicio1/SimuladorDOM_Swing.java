@@ -1,22 +1,8 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package EjerciciosPracticosSwing.Ejercicio1;
-
-/**
- * @author Miguel
- * Simulación de DOM – Creación de Página Web
- * Muestra:
- *  - Árbol DOM a la izquierda
- *  - Código HTML en vivo a la derecha (en texto plano)
- *  - Controles inferiores: Etiqueta (combo), Texto y botón Agregar Nodo
- */
 
 import javax.swing.*;
 import javax.swing.tree.*;
 import java.awt.*;
-import java.awt.event.*;
 
 public class SimuladorDOM_Swing extends JFrame {
 
@@ -24,13 +10,14 @@ public class SimuladorDOM_Swing extends JFrame {
     private DefaultTreeModel modelo;
     private JTree arbol;
     private JTextArea areaHTML;
+    private JEditorPane vistaPrevia;
 
     private JComboBox<String> comboEtiqueta;
     private JTextField campoTexto;
 
     public SimuladorDOM_Swing() {
         setTitle("Simulación de DOM – Creación de Página Web - Miguel Angel Hernandez Godinez");
-        setSize(900, 500);
+        setSize(1150, 600);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
         setLayout(new BorderLayout());
@@ -40,45 +27,61 @@ public class SimuladorDOM_Swing extends JFrame {
         actualizarHTML();
     }
 
-    /**
-     * Inicializa la estructura base del DOM
-     */
+    // ===== DOM INICIAL SIN BUTTON NI IMG =====
     private void inicializarDOM() {
         raiz = new DefaultMutableTreeNode("html");
         modelo = new DefaultTreeModel(raiz);
 
-        modelo.insertNodeInto(new DefaultMutableTreeNode("p - Bienvenido"), raiz, 0);
-        modelo.insertNodeInto(new DefaultMutableTreeNode("h1 - Bienvenidos"), raiz, 1);
-        modelo.insertNodeInto(new DefaultMutableTreeNode("footer - Copyright"), raiz, 2);
+        modelo.insertNodeInto(new DefaultMutableTreeNode("h1 - Bienvenidos"), raiz, 0);
+        modelo.insertNodeInto(new DefaultMutableTreeNode("p - Este es un simulador de DOM"), raiz, 1);
+        modelo.insertNodeInto(new DefaultMutableTreeNode("a - https://www.google.com"), raiz, 2);
     }
 
-    /**
-     * Construye la interfaz gráfica exactamente como el ejemplo
-     */
     private void inicializarInterfaz() {
-        // Árbol
+
+        // ----- Árbol -----
         arbol = new JTree(modelo);
         JScrollPane scrollArbol = new JScrollPane(arbol);
 
-        // Área de código HTML
+        // ----- HTML -----
         areaHTML = new JTextArea();
         areaHTML.setEditable(false);
         JScrollPane scrollHTML = new JScrollPane(areaHTML);
 
-        // Panel central dividido
-        JSplitPane split = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, scrollArbol, scrollHTML);
-        split.setDividerLocation(300);
-        add(split, BorderLayout.CENTER);
+        // ----- Vista Previa -----
+        vistaPrevia = new JEditorPane();
+        vistaPrevia.setContentType("text/html");
+        vistaPrevia.setEditable(false);
+        JScrollPane scrollVista = new JScrollPane(vistaPrevia);
 
-        // Panel inferior
+        JSplitPane splitDerecho = new JSplitPane(
+                JSplitPane.VERTICAL_SPLIT,
+                scrollHTML,
+                scrollVista
+        );
+        splitDerecho.setDividerLocation(280);
+
+        JSplitPane splitPrincipal = new JSplitPane(
+                JSplitPane.HORIZONTAL_SPLIT,
+                scrollArbol,
+                splitDerecho
+        );
+        splitPrincipal.setDividerLocation(300);
+
+        add(splitPrincipal, BorderLayout.CENTER);
+
+        // ----- Panel inferior -----
         JPanel panelInferior = new JPanel(new FlowLayout(FlowLayout.LEFT));
 
         panelInferior.add(new JLabel("Etiqueta:"));
-        comboEtiqueta = new JComboBox<>(new String[]{"p", "h1", "footer"});
+
+        comboEtiqueta = new JComboBox<>(new String[]{
+                "p", "h1", "h2", "a", "div"
+        });
         panelInferior.add(comboEtiqueta);
 
-        panelInferior.add(new JLabel("Texto:"));
-        campoTexto = new JTextField(20);
+        panelInferior.add(new JLabel("Texto / URL:"));
+        campoTexto = new JTextField(25);
         panelInferior.add(campoTexto);
 
         JButton btnAgregar = new JButton("Agregar Nodo");
@@ -86,40 +89,35 @@ public class SimuladorDOM_Swing extends JFrame {
 
         add(panelInferior, BorderLayout.SOUTH);
 
-        // Evento del botón
-        btnAgregar.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                agregarNodo();
-            }
-        });
+        btnAgregar.addActionListener(e -> agregarNodo());
     }
 
-    /**
-     * Agrega un nodo como hijo directo de html
-     */
     private void agregarNodo() {
         String etiqueta = comboEtiqueta.getSelectedItem().toString();
         String texto = campoTexto.getText();
 
         if (texto.isEmpty()) {
-            JOptionPane.showMessageDialog(this, "Debes ingresar un texto");
+            JOptionPane.showMessageDialog(this, "Debes ingresar un texto o URL");
             return;
         }
 
-        DefaultMutableTreeNode nuevo = new DefaultMutableTreeNode(etiqueta + " - " + texto);
-        modelo.insertNodeInto(nuevo, raiz, raiz.getChildCount());
+        modelo.insertNodeInto(
+                new DefaultMutableTreeNode(etiqueta + " - " + texto),
+                raiz,
+                raiz.getChildCount()
+        );
 
         campoTexto.setText("");
         actualizarHTML();
     }
 
-    /**
-     * Genera el código HTML a partir del árbol
-     */
+    // ===== GENERADOR DE HTML SIN IMG NI BUTTON =====
     private void actualizarHTML() {
         StringBuilder html = new StringBuilder();
-        html.append("<html>\n");
+        html.append("<html>\n<head>\n<style>\n")
+            .append("body{font-family:Arial;padding:10px}\n")
+            .append("div{border:1px dashed #999;padding:10px;margin:5px}\n")
+            .append("</style>\n</head>\n<body>\n");
 
         for (int i = 0; i < raiz.getChildCount(); i++) {
             String dato = raiz.getChildAt(i).toString();
@@ -128,17 +126,27 @@ public class SimuladorDOM_Swing extends JFrame {
             String tag = partes[0];
             String texto = partes.length > 1 ? partes[1] : "";
 
-            html.append("<").append(tag).append(">")
+            if (tag.equals("a")) {
+                html.append("<a href='").append(texto)
+                    .append("' target='_blank'>")
+                    .append(texto)
+                    .append("</a><br>\n");
+            } 
+            else {
+                html.append("<").append(tag).append(">")
                     .append(texto)
                     .append("</").append(tag).append(">\n");
+            }
         }
 
-        html.append("</html>");
+        html.append("</body>\n</html>");
+
         areaHTML.setText(html.toString());
+        vistaPrevia.setText(html.toString());
     }
 
     public static void main(String[] args) {
-        SwingUtilities.invokeLater(() -> new SimuladorDOM_Swing().setVisible(true));
+        SwingUtilities.invokeLater(() ->
+                new SimuladorDOM_Swing().setVisible(true));
     }
 }
-
